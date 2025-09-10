@@ -10,6 +10,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 @Override
+protected void onCreate(Bundle savedInstanceState)
+
+        super.onCreate(savedInstanceState);
+
+        Log.d(TAG, "onCreate: Activity is being created.");
+
+    }
+
+@Override
 protected void onStart() {
     super.onStart();
     Log.d(TAG, "onStart: Activity is becoming visible.");
